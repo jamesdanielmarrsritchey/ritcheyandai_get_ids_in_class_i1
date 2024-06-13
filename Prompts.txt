@@ -1,0 +1,14 @@
+jamesdanielmarrsritchey: Using Javascript, write a function which returns an array of element IDs for all elements in a class.
+
+GitHub Copilot: ```javascript
+function getElementIdsByClass(className) {
+  // Get all elements with the specified class name
+  const elements = document.getElementsByClassName(className);
+  
+  // Map the elements to their IDs
+  const ids = Array.from(elements).map(element => element.id);
+  
+  // Return the array of IDs
+  return ids;
+}
+```

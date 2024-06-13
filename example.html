@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<div id='output'>Click here to see a list of all ids within a class.
+<div class='test' id="test1">
+<span id='test2' class="test"></span>
+<span id='test3' class="test"></span>
+<span id='test4' class="test"></span>
+</div>
+
+</div>
+<script src="function.js"></script>
+<script>
+document.querySelector("#output").addEventListener("click", function() {
+    const element = document.querySelector("#output");
+    if (element) {
+        const classIDs = getElementIdsByClass('test');
+        element.innerHTML = classIDs;
+    }
+});
+</script>
+</body>
+</html>
